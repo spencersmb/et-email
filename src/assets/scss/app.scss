@@ -16,10 +16,6 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-body, table.body, p, td, th{
-  font-size: 14px;
-  line-height: 22px;
-}
 body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a{
   color: #666666;
   font-family: Helvetica, Arial, sans-serif;
@@ -28,7 +24,6 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a{
   margin: 0;
   Margin: 0;
   text-align: left;
-  line-height: 22px;
 }
 table {
   border-spacing: 0;
@@ -46,10 +41,11 @@ table.body{
 table, tr, td {
   padding: 0;
   vertical-align: top;
-  text-align: left; }
+  text-align: left;
+}
 table.container{
   background: #fefefe;
-  width: 580px;
+  //width: 580px;
   margin: 0 auto;
   Margin: 0 auto;
   text-align: inherit;
@@ -61,7 +57,7 @@ table.row {
 table.container table.row {
   display: table; }
 center{
-  min-width: 580px;
+  //min-width: 580px;
   width: 100%;
 }
 td {
@@ -124,7 +120,7 @@ table.hr {
   width: 100%; }
 table.hr th {
   height: 0;
-  max-width: 580px;
+  //max-width: 580px;
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid #0a0a0a;
@@ -192,8 +188,8 @@ body.outlook p {
   color: #c69f73;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 20px !important;
-
+  font-size: 18px !important;
+  line-height: 24px !important;
 }
 .et-link {
   color: #c69f73; }
@@ -214,7 +210,8 @@ body.outlook p {
 .col-text-center th {
   text-align: center; }
 
-.unsubscribe a {
+.unsubscribe .et-link {
+  color: #c2c2c2;
   font-size: 12px;
   text-transform: uppercase;
   padding: 0 10px 0 10px; }
@@ -224,3 +221,48 @@ body.outlook p {
 
 .italic {
   font-style: italic; }
+
+table{
+  max-width: none !important;
+}
+th{
+  //width: auto !important;
+}
+center {
+  //min-width: none !important;
+}
+.float-center{
+  width: 100% !important;
+  max-width: 600px !important;
+}
+
+.border-bottom{
+  border-bottom:1px solid #cdcdcd;
+}
+
+.et-top{
+  padding-top: 20px;
+}
+
+//from email
+.full-width-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+th.columns {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+td.columns,
+td.column,
+th.columns,
+th.column {
+  padding-bottom: 16px;
+}
+
+th.columns table:not(.button) {
+  width: 100%;
+}
