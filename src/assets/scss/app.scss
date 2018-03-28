@@ -222,6 +222,11 @@ body.outlook p {
 .italic {
   font-style: italic; }
 
+.italic-x2 {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
 table{
   max-width: none !important;
 }
@@ -265,4 +270,8 @@ th.column {
 
 th.columns table:not(.button) {
   width: 100%;
+}
+
+.text-grey{
+  color: #a0a0a0;
 }
